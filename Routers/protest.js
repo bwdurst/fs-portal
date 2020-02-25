@@ -3,7 +3,7 @@ const protestController = require('../Controllers/protest')
 const { checkJwt } = require('../middleware')
 const router = express.Router()
 
-router.get('/', checkJwt, protestController.getAllProtests)
+router.get('/', protestController.getAllProtests)
 
 // router.get('/:id', usersController.getUserById)
 

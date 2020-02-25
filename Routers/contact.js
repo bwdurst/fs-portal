@@ -3,7 +3,7 @@ const contactController = require('../Controllers/contact')
 const { checkJwt } = require('../middleware')
 const router = express.Router()
 
-router.get('/', checkJwt, contactController.getAllContacts)
+router.get('/', contactController.getAllContacts)
 
 // router.get('/:id', usersController.getUserById)
 
