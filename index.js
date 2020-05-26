@@ -19,7 +19,7 @@ app.use('/properties', propertyRouter)
 app.use('/protests', protestRouter)
 
 app.get('/', (req, res) => {
-  res.send('Welcome to our server!')
+  res.send('Welcome to the Five Stone Client Portal!')
 })
 
 app.listen(port, () => {
